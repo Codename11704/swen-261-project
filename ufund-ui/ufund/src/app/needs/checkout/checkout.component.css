@@ -1,0 +1,59 @@
+.checkout {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: -5%;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 1%;
+  border-radius: 50px;
+  background-color: burlywood;
+  border: 5px solid green;
+  text-align: left;
+}
+#spacing {
+    margin: 7%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+#right {
+    text-align: right;
+}
+.sendit {
+    text-align: center;
+}
+.logout{
+  text-align: right;
+}
+form{
+    text-align: left;
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1%;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: limegreen; /* Green */
+    border: 1px solid green;
+    border-radius: 8px;
+    color: black;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 16px;
+    margin: 7%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    transition-duration: 0.3s;
+  }
+  
+  button:hover {
+    background-color: lime; /* Green */
+    border: 1px solid limegreen;
+  }
+  
+  button:active {
+    background-color: white; /* Green */
+    border: 1px solid lime;
+  }

@@ -1,0 +1,91 @@
+nav {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+label {
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1%;
+}
+
+input {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 30%;
+  color: black;
+  border: 1px solid limegreen;
+  
+}
+
+textarea {
+  font-size: 20px;
+  border-radius: 10px;
+  width: 70%;
+  height: 50%;
+  color: black;
+  border: 1px solid limegreen;
+  
+}
+ 
+.needs {
+  margin: -5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 1%;
+  border-radius: 50px;
+  background-color: burlywood;
+  border: 5px solid green;
+  text-align: center;
+}
+
+.logout{
+  text-align: right;
+}
+
+#left {
+  text-align: left;
+}
+
+#center {
+  text-align: center;
+}
+
+.sendit {
+  text-align: center;
+}
+ 
+
+button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: limegreen; /* Green */
+  border: 1px solid green;
+  border-radius: 8px;
+  color: black;
+  padding: 10px 24px;
+  text-align: center;
+  font-size: 16px;
+  margin: 7%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: lime; /* Green */
+  border: 1px solid limegreen;
+}
+
+button:active {
+  background-color: white; /* Green */
+  border: 1px solid lime;
+}

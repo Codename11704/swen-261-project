@@ -1,0 +1,69 @@
+<div class="logout">
+    <button (click)="logout()">Logout</button>
+</div>
+
+<div class="needs">
+    <div [formGroup]="search" class="search">
+        <h2>Needs</h2>
+        <label>Search </label>
+        <span>
+        <input placeholder="Need Name" formControlName="searchValue">
+        <button (click)="searchNeed()">Submit</button>
+        </span> 
+    </div>
+    <h3 noNeeds="noNeeds">{{noNeeds}}</h3>
+    <div *ngFor="let need of needs; let i = index" id="left">
+        <hr>
+        <form [formGroup]="needEditor">
+            <h3>{{ need.name }}</h3>
+            <label>Name: </label>
+            <input formControlName="name" id="name" placeholder="{{ need.name }}">
+            <br>
+            <label>Money Earned: {{need.moneyEarned}}$ / {{need.moneyNeeded}}$</label>
+            <br>
+            <label>Money Requested: </label>
+            <input formControlName="moneyNeeded" id="needed" placeholder="{{need.moneyNeeded}}">
+            <br>
+            <label>Number of helpers: {{need.count}}</label>
+            <br>
+            <label>Description: </label>
+            <label>{{need.description}}</label>
+            <br>
+            <textarea formControlName="description" id="desc" placeholder="{{ need.description }}"></textarea>
+            <br>
+            <br>
+            <div id="center">
+                <button (click)="onSubmitChange(need,i)" >Confirm</button>
+                <button (click)="onSubmitDelete(need)">Delete</button>
+                <br>
+                <label> {{this.getEditorResponse(i)}}</label>
+                <br>
+            </div>
+        </form>
+    </div>
+    <div id="left">
+        <hr>
+        <form [formGroup]="needCreator">
+            <h3>New Need</h3>
+            <label>Name: </label>
+            <input formControlName="name" id="name">
+            <br>
+            <label>Money Requested: </label>
+            <input formControlName="moneyNeeded" id="needed">
+            <br>
+            <label>Description: </label>
+            <br>
+            <textarea formControlName="description" id="desc" ></textarea>
+            <br>
+            <br>
+            <div id="center">
+            <button (click)="onSubmitNew()">Confirm</button>
+            <br>
+            <label responseCreate="responseCreate"> {{responseCreate}}</label>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <br>
+  </div>
+  

@@ -1,0 +1,39 @@
+
+<nav>
+    <h1>Update User Settings</h1>
+    <div [formGroup]="userForm">
+        <br>
+        <span>
+            <label>New Username: </label>
+            <br>
+            <input formControlName="newUser" placeholder="{{getUser()}}">
+            <br>
+            <br>
+            <button (click)="onChangeUser()">Change Username</button>
+            <br>
+            <label userResponse="userResponse">{{userResponse}}</label>
+        </span>
+        <br>
+        <br>
+        <span>
+            <label>New Password: </label>
+            <br>
+            <input formControlName="newPass">
+            <br>
+            <br>
+            <button (click)="onChangePass()">Change Password</button>
+            <br>
+            <label passResponse="passResponse">{{passResponse}}</label>
+
+        </span>
+        <br>
+        <br>
+        <button (click)="onDelete()">Delete Account</button>
+        <br>
+        <br>
+        <br>
+        <button (click)="logout()">Logout</button>
+        <br>
+        <button (click)="back()">Back</button>
+    </div>
+</nav>

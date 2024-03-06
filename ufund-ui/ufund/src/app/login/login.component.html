@@ -1,0 +1,23 @@
+
+<nav>
+    <div>
+        <form [formGroup]="loginForm">
+            <h2>Login</h2>
+            <label> Username: </label>
+            <input formControlName="username"/>
+            <br>
+            <br>
+            <label> Password: </label>
+            <input type= "password" formControlName="password"/>
+            <br>
+            <br>
+            <button (click)="onSubmit()">Login</button>
+            <button (click)="register()">Register</button>
+            <br>
+            <label response="response">{{response}}</label>
+            <br>
+            <br>
+        </form>
+    </div>
+</nav>
+

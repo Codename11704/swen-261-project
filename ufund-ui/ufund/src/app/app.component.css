@@ -1,0 +1,8 @@
+div {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  background-color: limegreen;
+  border: 5px solid green;
+  text-align: center;
+  font-size: 150%;
+}

@@ -1,0 +1,45 @@
+
+<div class="settings">  
+  <button (click)="proceedToCheckout()">Checkout</button>
+  <button (click)="toUserSettings()">User Settings</button>
+  <button (click)="logout()">Logout</button>
+</div>
+
+<div class="needs">
+  <h2>Needs</h2>
+  <div [formGroup]="search" class="search">
+    <label>Search </label>
+    <span>
+      <input placeholder="Need Name" formControlName="searchValue">
+      <button (click)="searchNeed()">Submit</button>
+    </span>
+  </div>
+  <h5 noNeeds="noNeeds">{{noNeeds}}</h5>
+  <div [formGroup]="form">
+    <div formArrayName="needForms">
+      <div *ngFor="let need of needs; let i = index">
+        <div formGroupName="{{i}}">
+          <h4>------------------------------------------------------------------------------------------------</h4>
+          <h3 class="name">{{need.name}}</h3>
+          <label>{{need.description}}</label>
+          <br>
+          <label>Number of helpers: {{need.count}}</label>
+          <br>
+          <label>{{need.moneyEarned}}$ / {{need.moneyNeeded}}$ raised</label>
+          <br>
+          <input name="amount" id="amount" min="1" formControlName="amount">
+          <span><button (click)="onSubmit(need, i)">Add to cart</button></span>
+          <label id="output"></label>
+          <br>
+          <div class="response">
+            <label>{{this.getResponse(i)}}</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4>------------------------------------------------------------------------------------------------</h4>
+  <div class="checkout">
+    <button (click)="proceedToCheckout()">Checkout</button>
+  </div>
+</div>

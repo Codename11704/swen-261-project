@@ -1,0 +1,25 @@
+<div class="logout">
+  <button (click)="logout()">Logout</button>
+</div>
+
+<div class="checkout">
+    <h2>Checkout</h2>
+    <div *ngFor="let need of needs">
+      <hr>
+        <label class="name">{{need.name}}: </label>
+        <label [innerHTML]="getPrice(need)"></label><label>$</label>
+        <div id="right">
+        <button (click)="remove(need)">Remove</button>
+        </div>
+    </div>
+    <div class="sendit">
+      <br>
+      <hr>
+      <label>Your Total Donation is: {{ total }}$</label>
+      <br>
+      <button (click)="purchase()">Purchase</button>
+      <br><br>
+      <button (click)="back()" id="spacing">Back</button>
+      
+    </div>
+  </div>

@@ -1,0 +1,53 @@
+body {
+    margin-left: 37%;
+    margin-right: 37%;
+    width: 20%;
+    padding: 20px;
+    border: 10px solid green;
+    border-radius: 10px;
+  } 
+  
+  nav {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  input {
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px soild green;
+    border-radius: 10px;
+    color: black;
+  }
+  
+  button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4CAF50; /* Green */
+    border-radius: 10px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    box-shadow: -3px 3px #999;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #00ff08; /* Green */
+    border: 1px soild #4CAF50;
+  }
+  button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 #999;
+    transform: translateY(3px);
+  }
+
+  a {
+    padding: 15px 32px;
+  }
